@@ -1,0 +1,423 @@
+/*Estructura*/
+body{
+    background-color: white;
+    color: rgb(165, 143, 170);
+    height:100vh;
+    margin: 0px;
+    padding:0px;
+    display:flex;
+    flex-direction:column;
+}
+h2{color:#8C52FF;
+    font-family: 'Yellowtail', cursive;
+    font-size:5rem;
+}
+p{
+    font-family: 'Roboto Slab', serif;}
+/*Footer*/
+footer{
+    background-color:#FFF0E1;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:60px;
+    border-top: solid black 5px;
+    color:black;
+    font-weight:bold;
+}
+
+footer>p:hover{
+    color:#8C52FF;
+}
+.logosRedes{
+    width:52px;
+    display:flex;
+    justify-content:end;
+}
+
+
+
+/*Home*/
+.portada{
+    background-image: url(../Multimedia/portada6.jpg);
+    background-position: 80%;
+    background-size:100%;
+    padding:10%;
+    display:flex;
+}
+.logoPortada{
+    width:50%;
+    padding-left:25%;
+    padding-top:7%;
+    animation-name:fade-in-left;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+@-webkit-keyframes fade-in-left {
+    0% {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-left {
+    0% {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.imagenesDelicias{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.saludo{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+.presentacionTxt{
+    font-size:2rem;
+    color:#8C52FF;
+    margin:10%;
+    margin-top:-15px;
+    font-family: 'Roboto Slab', serif;
+}
+.misProductos{
+    width:100%;
+    padding-bottom:15vh;
+    color:#61507F;
+    background-color: #FFF0E1;
+}
+
+h3{
+    font-size:5rem;
+    text-align:center;
+    text-decoration:;
+    font-family: 'Yellowtail', cursive;
+}
+.productosImagenes{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing:border-box;
+    margin-left:10px;
+    margin-bottom:100px;
+}
+
+.imgProductosHome{
+    width:300px;
+    border-radius: 15rem;
+}
+.imgProductosHome:hover{    
+    animation-name:shake-horizontal;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 0s;    
+}
+.imgPicada:hover{
+    animation-name:shake-horizontal;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 0s; 
+}
+
+@-webkit-keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+    80% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    90% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+  @keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+    80% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    90% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+  
+.imgPicada{
+    border-radius:15rem;
+    width:400px;
+}
+h4{ font-size:2rem;
+    text-align:center;
+    font-weight: bold;
+
+}
+.verMas{
+    padding:2%;
+    background-color: #61507F;
+    color:#FFF0E1;
+    text-decoration: none;
+    font-size:2rem;
+    margin-left:42%;
+    border-radius: 0.8rem;
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 11%);
+}
+section>a:hover{
+    background-color:black;
+    transition: 0.5s;
+}
+.otrosServicios{
+    width:100%;
+    padding-bottom:80vh;
+    color:#FFF0E1;
+    background-color: #61507F;
+}
+.personalizados{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.imgPersonalizados{
+    width:30%;
+}
+.txtPersonalizados{
+    text-align:center;
+    margin-top:10%;
+    margin-left:5%;
+    margin-right:5%;
+    font-size:3rem;
+}
+.contactoHome{
+    background-image: url(../Multimedia/Contacto.png);
+    width:100%;
+    padding-bottom:43%;
+}
+/*Producto*/
+.productos{
+
+    }
+.tabla{
+        color:white;
+        background-color: thistle;
+        font-size:1.1rem;
+        font-family: 'Otomanopee One', sans-serif;
+        text-align:center;
+        display:flex;
+        justify-content:center;
+    }
+    .listas{
+        list-style-type:circle;
+        text-align:left;
+    }
+    
+    /*Conocenos*/
+.acercade{
+    background-image: url(../Multimedia/acercade.PNG);
+    background-position: 65%;
+    background-size:80%;
+    background-repeat:none;
+    padding:24%;
+    
+}
+.fotoGrace{
+        width: 30%;
+        height:20%;
+}
+.conocenos{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.textoGrace{
+    color:#8C52FF;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 1rem;
+    width:500px;
+}
+
+/*Menú*/
+.navBar{
+    margin: 0px;
+    padding:10px;
+    background-color:#8C52FF !important;
+    font-family: 'Otomanopee One', sans-serif;
+    box-shadow: 0px 6px 5px 3px rgb(0 0 0 / 40%);
+    width: 100%;
+    height: 90px;
+    position:fixed;
+}
+.ulNav{
+    list-style:none;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around !important;
+    align-items: bottom;
+}
+nav ul li a{
+    text-decoration:none;
+    color:seashell !important;
+    font-size:1.3rem;
+}
+.logo{
+    width: 95px;
+    border-radius:45px;
+}
+li:hover{
+    font-weight: bold;
+    color:black;
+}
+.cakeNav{
+    width:100px;
+}
+/*Promociones*/
+#bodyPromo{
+    display:grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 25%, 15%, 15% 15% 15%, auto;
+    grid-template-areas: "menu menu menu"
+    "titulo titulo titulo"
+    "foto foto texto"
+    "foto foto texto"
+    "foto foto  texto"
+    "footer footer footer";
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+        }
+header{
+    grid-area:menu;
+}
+#footerGrid{
+    grid-area:footer;
+    padding:100px;
+    height:2%;
+}
+#fotoPromo{
+    grid-area: foto;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+}
+.imagenPromo{
+    
+    display:flex;
+    margin-bottom:10px;
+    justify-content:center;
+}
+#textoPromo{
+    grid-area:texto;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+    margin-right:30px;
+}
+h1{
+    grid-area:titulo;
+    margin-top:90px;
+    text-align:center;
+    color:blueviolet;
+}
+
+@media (max-width: 425px) { 
+    .portada{
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding:300px;
+    }
+    .presentacionTxt{
+        margin:none;
+    }
+    .misProductos{
+        margin:none;
+    }
+    .productosImagenes{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .personalizados{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .imgPersonalizados{
+        width:70%;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .portada{
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-bottom:500px;
+    }
+    body{
+        background-color:red;
+    }
+    .presentacionTxt{
+        margin:none;
+    }
+    .misProductos{
+        margin:none;
+    }
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) { ... }

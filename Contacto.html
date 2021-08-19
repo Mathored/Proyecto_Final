@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./CSS/CSS-proyecto-final.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <nav class="navBar">
+                <ul class="ulNav">
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="./Promociones.html">Promociones</a></li>
+                    <li><a href="Conocenos.html">Conocenos</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <h2>Contacto</h2> 
+        <form action="#" method="GET">
+            <fieldset>
+                <legend>Ingresá tus datos</legend>
+                <div>
+                    <label for="Name">Nombre</label>
+                    <input type="text" name="Name" id="Name">
+                </div>
+                <br>
+                <div>
+                    <label for="Surname">Apellido</label>
+                    <input type="text" name="Surname" id="Aurname">
+                </div>
+                <br>
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="nombre@ejemplo.com"/>
+                </div>
+                <br>
+                <div>
+                    <label for="Ayuda">¿En qué podemos ayudarte?</label>
+                    <select name="Ayuda id="Ayuda">
+                        <option value="Pedidos">Pedidos</option>
+                        <option value="Promociones">Promociones</option>
+                        <option value="Eventos">Eventos</option>
+                    </select>
+                </div>
+                <br>
+                <div>¿Te gustaría recibir el Newsletter?</div>
+                <input type="checkbox" name="acepta" value="1"/>Sí
+                <input type="checkbox" name="niega" value="2">No 
+                <br>
+                <br>
+                <div>
+                    <label for="Comentario">Dejanos tu comentario</label>
+                    <br>
+                    <textarea name="Comentario" id="Comentario" cols="30" rows="10" placeholder="Escribe algo..."></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+            </div>
+        </fieldset>
+    </section>
+    </form>
+    <section class="degrade">
+    </section>
+    <footer>
+        <p>9 de Julio 1850 - Lanús Este</p>
+        <p>Desarrollo y Diseño Web por Leandro Matías Alvarez</p>
+        <section class="logosRedes">
+            <a title="facebook" href="https://www.facebook.com/Las-Delicias-de-Grace-109736934689362"><img src="./Multimedia/facebook.png" alt="facebook" class="logosRedes"></a>
+            <a title="instagram" href="https://www.instagram.com/deliciasgracelanus/"><img src="./Multimedia/instagram.png" alt="instagram" class="logosRedes"></a>
+        </section>
+    </footer> 
+</body>
+</html>
