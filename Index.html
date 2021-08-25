@@ -3,11 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="COMIDA, PASTELERÍA, PIZZAS, VIANDAS">
+    <meta name="description" content="Pastelería artesanal para regalar y servicio de viandas para toda la semana">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Home</title>
     <link rel="stylesheet" href="./CSS/CSS-proyecto-final.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@300;400&family=Yellowtail&display=swap" rel="stylesheet">
@@ -22,20 +25,20 @@
                   </button>
                   <div class="collapse navbar-collapse ulNav" id="navbarNav">
                     <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      <li class="nav-item navLi">
+                        <a class="nav-link active" aria-current="page" href="./Index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="./Productos.html">Productos</a>
+                        <a class="nav-link navLi" href="./Productos.html">Productos</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="./Promociones.html">Promociones</a>
+                        <a class="nav-link navLi" href="./Promociones.html">Promociones</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="./Conocenos.html">Conocenos</a>
+                        <a class="nav-link navLi" href="./Conocenos.html">Conocenos</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="./Contacto.html">Contacto</a>
+                        <a class="nav-link navLi" href="./Contacto.html">Contacto</a>
                       </li>
                     </ul>
                   </div>
@@ -50,7 +53,10 @@
         <span class="presentacionTxt">Soy Grace y llevo a cabo con mucho amor este emprendimiento. Mi objetivo: que te guste lo que hago, que lo disfrutes, que te dé un momento de felicidad y que te sirva como excusa para compartir con un ser querido❤️</span>
     </section>
     <section class="misProductos">
+      <div data-aos="zoom-in">
         <h3>Mis productos</h3>
+      </div>
+      <div data-aos="zoom-in">
         <div class="productosImagenes">
             <article>
                 <img src="./Multimedia/muffin.JPG" alt="dulces" class="imgProductosHome">
@@ -65,22 +71,25 @@
                 <h4>Salados</h4>
             </article>
         </div>
+      </div>
             <a href="./Productos.html" class="verMas">Ver más</a>
-    </section>
+     </section>
     <section class="otrosServicios">
         <h3>Servicios personalizados</h3>
         <section>
+          <div data-aos="zoom-in-right">
             <div class="personalizados">
                 <p class="txtPersonalizados">Diseños que se adaptan a ese regalo que tenés en mente</p>
                 <img src="./Multimedia/lettercake.png"" alt="lettercake" class="imgPersonalizados">
             </div>
-            <div class="personalizados">
+          </div>
+            <div data-aos="zoom-in-left">
+              <div class="personalizados">
                 <img src="./Multimedia/producto2.png" alt="papa" class="imgPersonalizados">
                 <p class="txtPersonalizados">Presentes para festejar días especiales</p>
-            </div>
+              </div>  
+           </div>
         </section>
-    </section>
-    <section class="contacrtoHome">
     </section>
     <section class="degrade">
     </section>
@@ -92,6 +101,10 @@
             <a title="instagram" href="https://www.instagram.com/deliciasgracelanus/"><img src="./Multimedia/instagram.png" alt="instagram" class="logosRedes"></a>
         </div>
     </footer> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
