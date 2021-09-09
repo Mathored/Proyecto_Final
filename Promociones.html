@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@300;400&family=Yellowtail&display=swap" rel="stylesheet">
 </head>
-    <body id="bodyPromo">
+    <body>
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark navBar">
                 <div class="container-fluid">
@@ -26,7 +26,7 @@
                   <div class="collapse navbar-collapse ulNav" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item navLi">
-                        <a class="nav-link active" aria-current="page" href="./Index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link navLi" href="./Productos.html">Productos</a>
@@ -44,17 +44,33 @@
                   </div>
                 </div>
         </header>
-        <h2 class="titulo">Nuestras Promociones</h2>
-        <section id="fotoPromo">
-            <div class="imagenPromo"> <img src="./Multimedia/chipacitos.jpg" alt="chipa"></div>
-            <div class="imagenPromo"><img src="./Multimedia/fosforitos.jpg" alt="fosforitos"></div>
-            <div class="imagenPromo"><img src="./Multimedia/donaoreo.jpg" alt="dona"></div>
-        </section>
-        <section id="textoPromo"> <p>Chipacitos</p>
-        <p>Fosforitos de jamón y queso</p>
-        <p>Donas de oreo</p>
-        </section>
-        <footer id="footerGrid">
+        <div class="container"> 
+          <div data-aos="fade-down" data-aos-duration="1500">
+            <h2 class="titulo">Nuestras promociones</h2>
+            <div class="row prm prmfin">
+              <img class="col-lg-5 col-md-12 imgPrm"  src="./Multimedia/tortacumpleaños.jpg" alt="torta">
+              <div class="col-lg-6 col-md-12 col-xs-12 txtPrm">
+                <h4>Tortas</h3>
+                <p class="texto-promo">Exquisitas tortas para agasajar al homenajeado y compartir entre todos. Tortas clásicas, Drip Cake, Letter Cake y más ¡vos elegís!</p>
+              </div>
+            </div>
+            <div class="row prmfin">
+              <img class="col-lg-5 col-md-12 imgPrm" src="./Multimedia/promoinf.jpg" alt="promoinf">
+              <div class="col-lg-6 col-md-12 col-xs-12 txtPrm">
+                <h4>Combo infantil</h3>
+                <p class="texto-promo">Una merienda ideal para compartir con los más chicos. Contiene: una chocotorta mini, cuatro alfajores de ddl, ocho chipacitos, tres mini donas, dos cake pops, dos sandwiches de JyQ, dos súper cookies, dos chupetines de chocolate blanco y negro y una leche chocolatada.</p>
+              </div>
+            </div>
+            <div class="row prmfin">
+              <img class="col-lg-5 col-md-12 imgPrm" src="./Multimedia/promoveg.jpg" alt="promoveg">
+              <div class="col-lg-6 col-md-12 col-xs-12 txtPrm">
+                <h4>Picada vegana</h3>
+                <p class="texto-promo"> ¡Para combinar con lo que quieras! Contiene berenjenas en escabeche, hummus, siete tortillas de trigo (para armar tacos), 10 pizzetas y una bolsita con crackers de harina integral y mix de semillas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
             <p>9 de Julio 1850 - Lanús Este</p>
             <p>Desarrollo y Diseño Web por Leandro Matías Alvarez</p>
             <section class="logosRedes">
@@ -62,6 +78,10 @@
                 <a title="instagram" href="https://www.instagram.com/deliciasgracelanus/"><img src="./Multimedia/instagram.png" alt="instagram" class="logosRedes"></a>
             </section>
         </footer> 
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>

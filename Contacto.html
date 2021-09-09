@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="COMIDA, PASTELERÍA, PIZZAS, VIANDAS">
+    <meta name="description" content="Pastelería artesanal para regalar y servicio de viandas para toda la semana">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Home</title>
     <link rel="stylesheet" href="./CSS/CSS-proyecto-final.css">
@@ -24,7 +26,7 @@
               <div class="collapse navbar-collapse ulNav" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item navLi">
-                    <a class="nav-link active" aria-current="page" href="./Index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link navLi" href="./Productos.html">Productos</a>
@@ -42,53 +44,55 @@
               </div>
             </div>
     </header>
-    <section>
-        <h2>Contacto</h2> 
-        <form action="#" method="GET">
-            <fieldset>
-                <legend>Ingresá tus datos</legend>
-                <div>
-                    <label for="Name">Nombre</label>
-                    <input type="text" name="Name" id="Name">
-                </div>
-                <br>
-                <div>
-                    <label for="Surname">Apellido</label>
-                    <input type="text" name="Surname" id="Aurname">
-                </div>
-                <br>
-                <div>
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" name="email" id="email" placeholder="nombre@ejemplo.com"/>
-                </div>
-                <br>
-                <div>
-                    <label for="Ayuda">¿En qué podemos ayudarte?</label>
-                    <select name="Ayuda id="Ayuda">
-                        <option value="Pedidos">Pedidos</option>
-                        <option value="Promociones">Promociones</option>
-                        <option value="Eventos">Eventos</option>
-                    </select>
-                </div>
-                <br>
-                <div>¿Te gustaría recibir el Newsletter?</div>
-                <input type="checkbox" name="acepta" value="1"/>Sí
-                <input type="checkbox" name="niega" value="2">No 
-                <br>
-                <br>
-                <div>
-                    <label for="Comentario">Dejanos tu comentario</label>
-                    <br>
-                    <textarea name="Comentario" id="Comentario" cols="30" rows="10" placeholder="Escribe algo..."></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-            </div>
-        </fieldset>
-    </section>
-    </form>
-    <section class="degrade">
+    <section class="formulario">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-7"></div>
+          <div class="col-lg-5 col-md-12 col-xs-8 formulario-responsive" data-aos="fade-right" data-aos-duration="2000">
+            <h3>Contacto</h3>
+            <form action="#" method="GET">
+              <fieldset>
+                  <legend>Ingresá tus datos</legend>
+                  <div>
+                      <label for="Name">Nombre</label>
+                      <input type="text" name="Name" id="Name">
+                  </div>
+                  <br>
+                  <div>
+                      <label for="Surname">Apellido</label>
+                      <input type="text" name="Surname" id="Aurname">
+                  </div>
+                  <br>
+                  <div>
+                      <label for="email">Correo electrónico</label>
+                      <input type="email" name="email" id="email" placeholder="nombre@ejemplo.com"/>
+                  </div>
+                  <br>
+                  <div>
+                      <label for="Ayuda">¿En qué podemos ayudarte?</label>
+                      <select name="Ayuda id="Ayuda">
+                          <option value="Pedidos">Pedidos</option>
+                          <option value="Promociones">Promociones</option>
+                          <option value="Eventos">Eventos</option>
+                      </select>
+                  </div>
+                  <br>
+                  <div>
+                    <label for="Newsletter">¿Te gustaría recibir el Newsletter?</label>
+                    <input type="checkbox" name="acepta" value="1"/>Sí
+                    <input type="checkbox" name="niega" value="2">No 
+                  </div>
+                  <div>
+                  <br>
+                      <input class="centrar" type="submit" value="Enviar">
+                      <input class="centrar" type="reset" value="Borrar">
+                  </div>
+                </fieldset>
+              </section>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
         <p>9 de Julio 1850 - Lanús Este</p>
@@ -97,7 +101,11 @@
             <a title="facebook" href="https://www.facebook.com/Las-Delicias-de-Grace-109736934689362"><img src="./Multimedia/facebook.png" alt="facebook" class="logosRedes"></a>
             <a title="instagram" href="https://www.instagram.com/deliciasgracelanus/"><img src="./Multimedia/instagram.png" alt="instagram" class="logosRedes"></a>
         </section>
-    </footer> 
+     </footer> 
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
