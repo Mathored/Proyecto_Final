@@ -103,14 +103,14 @@ li:hover{
 .portada{
     background-image: url(../Multimedia/portada6.jpg);
     background-position: 80%;
-    background-size:100%;
+    background-size:cover;
     padding:10%;
     display:flex;
     max-width: 100%;
-    height: auto;
+    height: 100vh;
 }
 .logoPortada{
-    width:70%;
+    width:80%;
     padding-left:25%;
     padding-top:7%;
     animation-name:fade-in-left;
