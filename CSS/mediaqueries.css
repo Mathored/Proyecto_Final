@@ -1,0 +1,42 @@
+/* Mobile Styles */
+@media only screen and (min-width: 201px) and (max-width: 400px) {
+  .imgPersonalizados {
+    width: 500px;
+  }
+  .logoPortada {
+    width: 1% !important;
+    padding: -30%;
+    -webkit-animation-name: fade-in-left;
+            animation-name: fade-in-left;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 100s;
+            animation-delay: 100s;
+  }
+  .navBar {
+    height: 20%;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .navBar {
+    height: 25%;
+  }
+  .logoPortada {
+    padding-top: 100px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  blody {
+    background-color: #B2D6FF;
+    /* Blue */
+  }
+}
+/*# sourceMappingURL=mediaqueries.css.map */

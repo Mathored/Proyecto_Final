@@ -1,8 +1,11 @@
-/*Estructura*/
+@import "animaciones";
+@import "colores";
+@import "tipografia";
+
+/*Estructura*/ 
 body{
     background-color: white;
-    color: rgb(165, 143, 170);
-    height:100vh;
+    color: $color_body;
     margin: 0px;
     padding:0px;
     display:flex;
@@ -10,26 +13,25 @@ body{
 }
 
 h1{
-    color:#8C52FF;
+    color:$violeta;
     text-align: center;
     font-size: 5rem;
 }
-h2{color:#8C52FF;
-    font-family: 'Yellowtail', cursive;
+h2{color:$violeta;
+    font-family: $cursiva;
     font-size:5rem;
     text-align:center;
 }
 h3{ color:white;
     font-size:5rem;
     text-align:center;
-    text-decoration:;
-    font-family: 'Yellowtail', cursive;
+    font-family: $cursiva;
 }
-h4{color: #8C52FF;
-    font-size:5rem;
+h4{color: $violeta;
+    font-size:2rem;
     text-align:center;
-    text-decoration:;
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: $otomano;
+    font-weight: bold;
 
 }
 .titulo{
@@ -37,10 +39,11 @@ h4{color: #8C52FF;
     text-align: center;
 }
 p{
-    font-family: 'Roboto Slab', serif;}
+    font-family: $formal}
+
 /*Footer*/
 footer{
-    background-color:#FFF0E1;
+    background-color:$crema;
     height: 200px;
     display: flex;
     justify-content: space-around;
@@ -49,11 +52,11 @@ footer{
     border-top: solid black 5px;
     color:black;
     font-weight:bold;
-}
 
 footer>p:hover{
-    color:#8C52FF;
-}
+    color:$violeta;
+     }
+}    
 .logosRedes{
     width:52px;
     display:flex;
@@ -63,9 +66,9 @@ footer>p:hover{
 .navBar{
     margin: 0px;
     padding:10px;
-    background-color:#8C52FF !important;
-    font-family: 'Otomanopee One', sans-serif;
-    box-shadow: 0px 6px 5px 3px rgb(0 0 0 / 40%);
+    background-color:$violeta !important;
+    font-family: $otomano;
+    box-shadow: 0px 6px 5px 3px rgb(0, 0, 0 / 40%);
     width: 100%;
     height: 15%;
     position:fixed;
@@ -73,7 +76,7 @@ footer>p:hover{
 
 }
 .ulNav{
-    background-color: #8C52FF;
+    background-color: $violeta;
     list-style:none;
     height: 20%;
     display: flex;
@@ -82,19 +85,26 @@ footer>p:hover{
 .navLi{
     margin-right:60px;
 }
-nav ul li a{
-    text-decoration:none;
-    color:seashell !important;
-    font-size:1.3rem;
+nav{
+    ul{
+        li{
+        li:hover{
+                font-weight: bold;
+                color:black;
+        }
+            a{  text-decoration:none;
+                color:seashell !important;
+                font-size:1.3rem;
+            }
+        }
+    }
+    
 }
 .logo{
     width: 95px;
     border-radius:45px;
 }
-li:hover{
-    font-weight: bold;
-    color:black;
-}
+
 .cakeNav{
     width:100px;
 }
@@ -110,7 +120,7 @@ li:hover{
     height: 100vh;
 }
 .logoPortada{
-    width:80%;
+    width:70%;
     padding-left:25%;
     padding-top:7%;
     animation-name:fade-in-left;
@@ -119,30 +129,6 @@ li:hover{
     animation-duration: 1s;
     animation-delay: 0s;
 }
-@-webkit-keyframes fade-in-left {
-    0% {
-      -webkit-transform: translateX(-50px);
-              transform: translateX(-50px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  @keyframes fade-in-left {
-    0% {
-      -webkit-transform: translateX(-50px);
-              transform: translateX(-50px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-  }
 
 .imagenesDelicias{
     display:flex;
@@ -156,16 +142,16 @@ li:hover{
 }
 .presentacionTxt{
     font-size:2rem;
-    color:#8C52FF;
+    color:$violeta;
     margin:10%;
     margin-top:55px;
-    font-family: 'Roboto Slab', serif;
+    font-family: $formal
 }
 .misProductos{
     width:100%;
     padding-bottom:15vh;
-    color:#61507F;
-    background-color: #FFF0E1;
+    color:$violeta_oscuro;
+    background-color: $crema;
 }
 
 
@@ -184,22 +170,22 @@ li:hover{
 .imgProductosHome{
     width:300px;
     border-radius: 15rem;
+.imgProductosHome:hover{    
+        animation-name:shake-horizontal;
+        animation-iteration-count: initial;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+        animation-delay: 0s;    
+    }
 }
 .txtProductos{
-    color: #8C52FF;
+    color: $violeta;
     font-size:2rem;
     text-align:center;
-    text-decoration:;
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: $otomano;
     margin-left:-15px;
 }
-.imgProductosHome:hover{    
-    animation-name:shake-horizontal;
-    animation-iteration-count: initial;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-    animation-delay: 0s;    
-}
+
 .imgPicada:hover{
     animation-name:shake-horizontal;
     animation-iteration-count: initial;
@@ -207,87 +193,33 @@ li:hover{
     animation-duration: 1s;
     animation-delay: 0s; 
 }
-
-@-webkit-keyframes shake-horizontal {
-    0%,
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    10%,
-    30%,
-    50%,
-    70% {
-      -webkit-transform: translateX(-10px);
-              transform: translateX(-10px);
-    }
-    20%,
-    40%,
-    60% {
-      -webkit-transform: translateX(10px);
-              transform: translateX(10px);
-    }
-    80% {
-      -webkit-transform: translateX(8px);
-              transform: translateX(8px);
-    }
-    90% {
-      -webkit-transform: translateX(-8px);
-              transform: translateX(-8px);
-    }
-  }
-  @keyframes shake-horizontal {
-    0%,
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    10%,
-    30%,
-    50%,
-    70% {
-      -webkit-transform: translateX(-10px);
-              transform: translateX(-10px);
-    }
-    20%,
-    40%,
-    60% {
-      -webkit-transform: translateX(10px);
-              transform: translateX(10px);
-    }
-    80% {
-      -webkit-transform: translateX(8px);
-              transform: translateX(8px);
-    }
-    90% {
-      -webkit-transform: translateX(-8px);
-              transform: translateX(-8px);
-    }
-  }
   
 .imgPicada{
     border-radius:15rem;
     width:400px;
 }
-h4{ font-size:2rem;
-    text-align:center;
-    font-weight: bold;
+h4{ 
 
 }
 .verMas{
     padding:2%;
-    background-color: #61507F;
-    color:#FFF0E1;
+    background-color: $violeta_oscuro;
+    color:$crema;
     text-decoration: none;
     font-size:2rem;
     margin-left:42%;
     border-radius: 0.8rem;
-    box-shadow: 4px 4px 4px rgb(0 0 0 / 11%);
+    box-shadow: 4px 4px 4px rgb(0, 0, 0 / 11%);
+}
+.verMas:hover{
+    transition: 0.5s;
+    background-color: black;
+    color:white;
 }
 .otrosServicios{
     width:100%;
-    color:#FFF0E1;
-    background-color: #61507F;
+    color:$crema;
+    background-color: $violeta_oscuro;
 }
 .personalizados{
     display:flex;
@@ -316,13 +248,13 @@ h4{ font-size:2rem;
 .productos-box{
     margin-top:50px;
     margin-bottom:50px;
-    color:#61507F;
+    color:$violeta_oscuro;
     text-align: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: $formal
 }
 .productos-box:hover{
-    box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 90%);
-    background-color:#FFF0E1;
+    box-shadow: 4px 4px 4px 4px rgb(0, 0, 0 / 90%);
+    background-color:$crema;
 }
     
     /*Conocenos*/
@@ -340,8 +272,9 @@ h4{ font-size:2rem;
     margin-top:50px;
 }
 .textoGrace{
-    color:#8C52FF;
-    font-family: 'Roboto Slab', serif;    font-size: 1rem;
+    color:$violeta;
+    font-family: $formal; 
+    font-size: 1rem;
     width:500px;
     margin-right: 20px;
 }
@@ -359,7 +292,7 @@ h4{ font-size:2rem;
     width: 500px;
     padding: initial;
     border-radius: 3rem;
-    box-shadow: 4px 4px 4px rgb(0 0 0 / 30%);
+    box-shadow: 4px 4px 4px rgb(0, 0, 0 / 30%);
 }
 .txtPrm{
     margin-top:40px;
@@ -367,9 +300,9 @@ h4{ font-size:2rem;
 }
 .texto-promo{
     font-size:1.7rem;
-    color:#8C52FF;
+    color:$violeta;
     text-align:center;
-    font-family: 'Roboto Slab', serif;
+    font-family: $formal
 }
 
 /*Formulario*/
@@ -377,7 +310,7 @@ h4{ font-size:2rem;
     background-image: url(/Multimedia/Contacto.png);
     padding-top:100px;
     color:white;
-    background-color: #8C52FF;
+    background-color:white;
 }
 .centrar{
     align-items: center;
@@ -388,29 +321,13 @@ h4{ font-size:2rem;
     margin-top:-15px;
 }
 .formulario-responsive{
-    background: rgb(97 80 127);
-	padding:0;
+    background: rgb(97, 80, 127);
+	padding:2px;
 	border-radius: 30px;
 	margin-top: 4vh;
 	text-align: center;
 }
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-    .imgPersonalizados{
-        width:500px;
-    }
-  }
-  /* Tablet Styles */
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
-    blody {
-      background-color: #F5CF8E; /* Yellow */
-    }
-  }
-  /* Desktop Styles */
-  @media only screen and (min-width: 961px) {
-    blody {
-      background-color: #B2D6FF; /* Blue */
-    }
-  }
+@import "mediaqueries";
+
   
